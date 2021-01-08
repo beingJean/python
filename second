@@ -1,1 +1,15 @@
-
+#p91代刷新的文本进度条
+#center()用法，time.clock(),print(end='')后续空行，
+import time
+print('执行开始'.center(scale,'-'))
+scale=50
+time.clock()
+for i in range(scale+1):
+  a=i/scale
+  b='*'*i
+  c='-'*(scale-i)
+  t=time.clock()-t
+  print('\r{:^3.0f}%[{}->{}]{}s'.format(a,b,c,t),end='')
+  time.sleep(0.05)
+print('\n'+'执行结束'.center(scale,'-')）
+  
