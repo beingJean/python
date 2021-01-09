@@ -1,0 +1,4 @@
+import turtle as t
+t.fd(200)
+#不需setup
+turtle.Turtle()
